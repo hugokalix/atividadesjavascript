@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Tiramos o background-image daqui! */
+}
+
+/* ==========================================
+   TRATATIVA DA IMAGEM E DA PELÍCULA
+   ========================================== */
+
+/* Configuração da imagem com SRC */
+.imagem-fundo {
+    position: fixed; /* Fixa na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Faz a imagem preencher a tela toda sem achatar */
+    z-index: -2; /* Joga a imagem lá pro fundo de tudo */
+}
+
+/* Configuração da película transparente bege */
+.pelicula-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(230, 212, 184, 0.85); /* Cor bege com 85% de transparência */
+    z-index: -1; /* Fica na frente da imagem, mas atrás do site */
+}
+
+/* ========================================== */
+
+header {
+    background-color: #5C1D1D;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+header .logo-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+header .title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.container {
+    background-color: #FDF3E3; /* Leve tom de bege quente para combinar com o fundo */
+    padding: 60px; /* Aumentado de 30px para 50px para dar mais "respiro" interno */
+    border-radius: 15px;
+    border-top: 6px solid #5C1D1D; /* Mantém o detalhe vermelho escuro no topo */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25); /* Sombra levemente mais forte para destacar a caixa maior */
+    text-align: center;
+    max-width: 600px; /* Aumentado de 400px para 500px para deixar a caixa mais larga */
+    width: 100%;
+}
+
+h2 {
+    color: #5C1D1D;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    margin-top: 5px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #5C1D1D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 90%;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #7E2828;
+}
+
+#resultado {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    min-height: 20px;
+}

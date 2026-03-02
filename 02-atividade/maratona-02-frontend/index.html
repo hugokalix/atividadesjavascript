@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Confeitaria</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <img src="./img/imagem-confeiteira.jpg.png" class="imagem-fundo" alt="Mulher fazendo bolo">
+    
+    <div class="pelicula-fundo"></div>
+
+    <header>
+        <div class="logo-icon">&#x1F382;</div> 
+        <div class="title">Bolo Encantado Confeitaria</div>
+    </header>;
+
+    <main>
+        <div class="container">
+            <h2>Verificador de Frete Grátis</h2>
+            
+            <label for="valorPedido">Valor do Pedido (R$):</label>
+            <input type="number" id="valorPedido" placeholder="Ex: 180">
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="clienteVip">
+                <label for="clienteVip">O cliente é VIP?</label>
+            </div>
+
+            <button id="btnVerificar">Verificar Frete</button>
+            
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
